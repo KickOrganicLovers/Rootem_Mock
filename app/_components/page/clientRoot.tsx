@@ -9,7 +9,7 @@ export type selectedType = 'map' | 'activity' | 'interests' | 'recent' | 'trendi
 export default function ClientRoot() {
     const [selected, setSelected] = useState<selectedType>('map')
     return (
-        <div className={'w-full h-fit'}>
+        <div className={'w-full h-fit flex flex-col items-center'}>
             <ContentsSelector selected={selected} setSelected={setSelected}/>
             <MapViewer/>
         </div>
