@@ -1,7 +1,7 @@
 import RouteCard, { RouteCardProps } from '@/app/_components/common/templates/routeCard';
 
 // Simple mock data for route cards (replace with API integration as needed)
-const mockRoutes: RouteCardProps[] = [
+export const mockRoutes: RouteCardProps[] = [
   { title: 'Kyoto Old Town Walk', user: 'taro', likes: 128, category: 'History', thumbnailSrc: '/devImages/Kyoto.jpg' },
   { title: 'Okinawa Beach Hopping', user: 'hanako', likes: 256, category: 'Beach', thumbnailSrc: '/devImages/Okinawa.jpg' },
   { title: 'Hokkaido Food Trip', user: 'satoshi', likes: 93, category: 'Food', thumbnailSrc: '/devImages/Hokkaido.jpg' },
@@ -10,10 +10,15 @@ const mockRoutes: RouteCardProps[] = [
   { title: 'Mount Fuji Scenic Drive', user: 'yuki', likes: 201, category: 'Nature', thumbnailSrc: '/devImages/Fuji.jpg' },
 ];
 
-export default function RouteList() {
+type RouteListProps = {
+  focusedIndex: number;
+  setFocusedIndex: (index: number) => void;
+};
+
+export default function RouteList({ focusedIndex, setFocusedIndex }: RouteListProps) {
   return (
     <div
-      className="flex w-[400px] h-full flex-col gap-3 absolute top-0 right-0 p-2 bg-grass/25 backdrop-blur-xs overflow-y-scroll overscroll-contain"
+      className="flex w-[400px] h-full flex-col gap-3 backdrop-blur-xs overflow-y-scroll overscroll-contain p-3"
       tabIndex={0}
       role="region"
       aria-label="Route list"
@@ -31,7 +36,12 @@ export default function RouteList() {
       }}
     >
       {mockRoutes.map((route, idx) => (
-        <RouteCard key={`${route.title}-${idx}`} {...route} />
+        <RouteCard
+          key={`${route.title}-${idx}`}
+          {...route}
+          isFocused={focusedIndex === idx}
+          onClick={() => setFocusedIndex(idx)}
+        />
       ))}
     </div>
   );
