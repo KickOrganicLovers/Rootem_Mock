@@ -24,8 +24,9 @@ export default function MapViewer() {
                 {/*    style={{ width: "100%", height: "100%" }}*/}
                 {/*/>*/}
                 <div className={'flex-1 h-full bg-background-1 relative'}>
-                    <img src={'/map.png'} alt={'map'} className={'w-full h-full object-cover'}/>
+                    <img src={'/Rootem_Mock/mockImages/map.jpg'} alt={'map'} className={'w-full h-full object-cover'}/>
                     {/* マップ上のオーバーレイなどが必要な場合はここに追加 */}
+                    <h2 className={'w-fit h-fit absolute inset-0 m-auto text-3xl font-bold backdrop-blur-md'}>本来はmapboxをここに埋め込む</h2>
                 </div>
                 <RouteViewer focusedIndex={focusedRouteIndex} />
                 <RouteList focusedIndex={focusedRouteIndex} setFocusedIndex={setFocusedRouteIndex} />
