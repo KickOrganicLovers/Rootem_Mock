@@ -35,7 +35,7 @@ export default function FeaturedRouteCard({ route, metric = 'likes', onClick }: 
       <img
         src={route.thumbnailImageSrc || '/mockImages/Kyoto.jpg'}
         alt={`${route.title} background`}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 duration-300 ease-out"
       />
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/40" aria-hidden="true" />

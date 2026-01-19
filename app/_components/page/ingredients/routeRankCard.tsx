@@ -24,11 +24,11 @@ export default function RouteRankCard({ route, rank, metric = 'likes', onClick }
       {/* Card container matching UserCard structure */}
       <div className="w-full h-full rounded-xl shadow-sm hover:shadow-md overflow-hidden flex flex-col">
         {/* Top section: thumbnail header image */}
-        <div className="relative h-32">
+        <div className="relative h-32 overflow-hidden">
           <img
             src={route.thumbnailImageSrc || '/mockImages/Kyoto.jpg'}
             alt={`${route.title} header`}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 duration-300 ease-out"
           />
         </div>
 

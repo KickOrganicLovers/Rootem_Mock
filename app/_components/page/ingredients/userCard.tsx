@@ -35,11 +35,11 @@ export function UserCard({ user, rank, metric, onClick }: UserCardProps) {
       {/* Card container with top fixed header and bottom bio area */}
       <div className="w-full h-full rounded-xl shadow-sm hover:shadow-md overflow-hidden flex flex-col">
         {/* Top section: profile background image only */}
-        <div className="relative h-32">
+        <div className="relative h-32 overflow-hidden">
           <img
             src={user.profileBackgroundImage || "/mockImages/userProfile.jpg"}
             alt="user header background"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 duration-300 ease-out"
           />
         </div>
 

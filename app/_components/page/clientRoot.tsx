@@ -6,6 +6,7 @@ import MapViewer from "@/app/_components/page/templates/mapViewer";
 import TopUsersList from "@/app/_components/page/templates/topUsersList";
 import TopRoutesList from "@/app/_components/page/templates/topRoutesList";
 import RecommendedArticlesList from "@/app/_components/page/templates/recommendedArticlesList";
+import PhotoViewer from "@/app/_components/page/templates/photoViewer";
 
 export type selectedType = 'home' | 'photos' | 'interests' | 'recent' | 'trending'
 
@@ -24,7 +25,9 @@ export default function ClientRoot() {
                             <RecommendedArticlesList/>
                         </div>
                     )
-                    case 'photos': return <></>
+                    case 'photos': return (
+                        <PhotoViewer/>
+                    )
                     case 'interests': return <></>
                     case 'recent': return <></>
                     case 'trending': return <></>
