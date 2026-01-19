@@ -7,7 +7,7 @@ import TopUsersList from "@/app/_components/page/templates/topUsersList";
 import TopRoutesList from "@/app/_components/page/templates/topRoutesList";
 import RecommendedArticlesList from "@/app/_components/page/templates/recommendedArticlesList";
 
-export type selectedType = 'home' | 'activity' | 'interests' | 'recent' | 'trending'
+export type selectedType = 'home' | 'photos' | 'interests' | 'recent' | 'trending'
 
 export default function ClientRoot() {
     const [selected, setSelected] = useState<selectedType>('home')
@@ -24,7 +24,7 @@ export default function ClientRoot() {
                             <RecommendedArticlesList/>
                         </div>
                     )
-                    case 'activity': return <></>
+                    case 'photos': return <></>
                     case 'interests': return <></>
                     case 'recent': return <></>
                     case 'trending': return <></>

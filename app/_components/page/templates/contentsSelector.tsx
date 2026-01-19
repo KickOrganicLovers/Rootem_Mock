@@ -8,7 +8,7 @@ import {HiHome} from "react-icons/hi";
 
 const SELECTOR_ITEMS = [
     { label: 'Home', icon: HiHome, selected: 'home'},
-    { label: 'Activity', icon: HiSparkles, selected: 'activity' },
+    { label: 'Photos', icon: HiSparkles, selected: 'photos' },
     { label: 'Interests', icon: HiFlag, selected: 'interests' },
     { label: 'Recent', icon: HiClock, selected: 'recent' },
     { label: 'Trending', icon: HiFire, selected: 'trending' },
