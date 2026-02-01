@@ -1,14 +1,15 @@
-import GoogleLoginButton from '@/app/_components/button';
+
 
 // TODO(ukyo): デザイン整える
 // TODO(ukyo): loginwithgoogleのエラーハンドリング
 // TODO(ukyo): ボタンコンポーネント整理
 // TODO(Leon): ログイン中にアクセスした場合のリダイレクト
+import LoginCard from "@/app/(auth)/login/_components/templates/loginCard";
+
 export default function Page() {
   return (
-    <div>
-      <h1>Login Page</h1>
-      <GoogleLoginButton />
+    <div className="min-h-screen flex items-center justify-center">
+      <LoginCard />
     </div>
   );
 }
