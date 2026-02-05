@@ -19,19 +19,19 @@ export default function TopUsersList({ users }: Props) {
       </div>
       <div className="w-full md:h-[300px] sm:h-[800px] h-[900px] grid grid-rows-3 md:grid-rows-1 grid-cols-1 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-3">
         <div className="col-span-2">
-          <FeaturedUserCard user={users[0]}/>
+          <FeaturedUserCard user={users[0]} metric="likes"/>
         </div>
         <div className="col-span-1 block">
-          <UserCard user={users[1]} rank={2}/>
+          <UserCard user={users[1]} rank={2} metric="likes"/>
         </div>
         <div className="col-span-1 block">
-          <UserCard user={users[2]} rank={3}/>
+          <UserCard user={users[2]} rank={3} metric="likes"/>
         </div>
         <div className="col-span-1 block md:hidden lg:block">
-          <UserCard user={users[3]} rank={4}/>
+          <UserCard user={users[3]} rank={4} metric="likes"/>
         </div>
         <div className="col-span-1 block md:hidden xl:block">
-          <UserCard user={users[4]} rank={5}/>
+          <UserCard user={users[4]} rank={5} metric="likes"/>
         </div>
       </div>
     </div>

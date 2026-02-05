@@ -1,23 +1,11 @@
 import React from 'react';
 import { HiHeart, HiEye } from 'react-icons/hi2';
+import {User} from "@/lib/client/types";
 
 export type MetricType = 'likes' | 'views';
 
-export type TopUser = {
-  id: string;
-  name: string;
-  likesThisWeek: number;
-  viewsThisWeek: number;
-  bio?: string;
-  location?: string;
-  /** URL of the user's profile icon image */
-  profileImage?: string;
-  /** URL of the user's profile background image */
-  profileBackgroundImage?: string;
-};
-
 export type UserCardProps = {
-  user: TopUser;
+  user: User;
   rank: number;
   metric: MetricType;
   onClick?: () => void;

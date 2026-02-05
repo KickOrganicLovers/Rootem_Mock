@@ -1,21 +1,14 @@
-import RouteCardHorizontal, { RouteCardProps } from '@/app/_components/common/templates/routeCardHorizontal';
+import RouteCardHorizontal from '@/app/_components/common/templates/routeCardHorizontal';
+import {Route} from "@/lib/client/types";
 
-// Simple mock data for route cards (replace with API integration as needed)
-export const mockRoutes: RouteCardProps[] = [
-  { title: 'Kyoto Old Town Walk', user: 'taro', likes: 128, category: 'History', thumbnailSrc: '/Rootem_Mock/mockImages/Kyoto.jpg' },
-  { title: 'Okinawa Beach Hopping', user: 'hanako', likes: 256, category: 'Beach', thumbnailSrc: '/Rootem_Mock/mockImages/Okinawa.jpg' },
-  { title: 'Hokkaido Food Trip', user: 'satoshi', likes: 93, category: 'Food', thumbnailSrc: '/Rootem_Mock/mockImages/Hokkaido.jpg' },
-  { title: 'Tokyo Night Lights', user: 'emi', likes: 174, category: 'City', thumbnailSrc: '/Rootem_Mock/mockImages/Tokyo.jpg' },
-  { title: 'Nara Temple Circuit', user: 'ken', likes: 67, category: 'Culture', thumbnailSrc: '/Rootem_Mock/mockImages/Nara.jpg' },
-  { title: 'Mount Fuji Scenic Drive', user: 'yuki', likes: 201, category: 'Nature', thumbnailSrc: '/Rootem_Mock/mockImages/Fuji.jpg' },
-];
 
 type RouteListProps = {
+  routes: Route[];
   focusedIndex: number;
   setFocusedIndex: (index: number) => void;
 };
 
-export default function RouteList({ focusedIndex, setFocusedIndex }: RouteListProps) {
+export default function RouteList({ routes, focusedIndex, setFocusedIndex }: RouteListProps) {
   return (
     <div
       className="flex w-[400px] h-full flex-col gap-3 backdrop-blur-xs overflow-y-scroll overscroll-contain p-3"
@@ -35,10 +28,10 @@ export default function RouteList({ focusedIndex, setFocusedIndex }: RouteListPr
         e.stopPropagation();
       }}
     >
-      {mockRoutes.map((route, idx) => (
+      {routes.map((route, idx) => (
         <RouteCardHorizontal
           key={`${route.title}-${idx}`}
-          {...route}
+          route={route}
           isFocused={focusedIndex === idx}
           onClick={() => setFocusedIndex(idx)}
         />

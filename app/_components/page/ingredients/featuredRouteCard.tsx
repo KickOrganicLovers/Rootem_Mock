@@ -1,22 +1,12 @@
 import React from 'react'
 import { BiHash } from 'react-icons/bi'
 import { HiHeart, HiEye } from 'react-icons/hi2'
+import {Route} from "@/lib/client/types";
 
 export type RouteMetricType = 'likes' | 'views'
 
-export type TopRoute = {
-  id: string
-  title: string
-  user: string
-  likesThisWeek: number
-  viewsThisWeek?: number
-  category: string
-  /** Background image for the route */
-  thumbnailImageSrc?: string
-}
-
 export type FeaturedRouteCardProps = {
-  route: TopRoute
+  route: Route
   metric?: RouteMetricType
   onClick?: () => void
 }
@@ -59,7 +49,7 @@ export default function FeaturedRouteCard({ route, metric = 'likes', onClick }: 
           <div className="flex items-center gap-2">
             <div className="flex flex-col items-end">
               <h3 className="text-4xl text-white font-bold">{route.title}</h3>
-              <p className="text-sm text-gray-300">by @{route.user} ・ {route.category}</p>
+              <p className="text-sm text-gray-300">by @{route.user.name} ・ {route.category}</p>
             </div>
           </div>
         </div>

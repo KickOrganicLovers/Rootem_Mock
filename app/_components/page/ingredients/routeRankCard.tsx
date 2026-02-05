@@ -49,7 +49,7 @@ export default function RouteRankCard({ route, rank, metric = 'likes', onClick }
 
         {/* Bottom section: meta info (author & category) */}
         <div className="flex-1 bg-background-1 p-3">
-          <p className="text-xs text-foreground-1 truncate">@{route.user} ・ {route.category}</p>
+          <p className="text-xs text-foreground-1 truncate">@{route.user.name} ・ {route.category}</p>
         </div>
       </div>
     </button>

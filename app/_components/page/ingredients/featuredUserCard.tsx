@@ -1,10 +1,11 @@
 import React from 'react'
 import { HiHeart, HiEye } from 'react-icons/hi2'
-import type { MetricType, TopUser } from '@/app/_components/page/ingredients/userCard'
+import type { MetricType } from '@/app/_components/page/ingredients/userCard'
 import {BiHash} from "react-icons/bi";
+import {User} from "@/lib/client/types";
 
 export type FeaturedUserCardProps = {
-  user: TopUser
+  user: User
   metric: MetricType
   onClick?: () => void
 }
