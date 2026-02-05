@@ -15,10 +15,10 @@ export default function PhotoContainer(props: { test: number }) {
             <img
                 src={
                     props.test === 1
-                        ? "/mockImages/Fuji.jpg"
+                        ? "/Routem_Mock/mockImages/Fuji.jpg"
                         : props.test === 2
-                            ? "/mockImages/Kyoto.jpg"
-                            : "/mockImages/Tokyo.jpg"
+                            ? "/Routem_Mock/mockImages/Kyoto.jpg"
+                            : "/Routem_Mock/mockImages/Tokyo.jpg"
                 }
                 className="
           w-full
@@ -67,7 +67,7 @@ export default function PhotoContainer(props: { test: number }) {
                 <p className={'text-gray-200 text-sm sm:text-md md:text-2xl font-bold line-clamp-2'}>from Kyoto Old Town Walk</p>
                 <div className={'flex items-center gap-2 text-gray-200 text-xs sm:text-sm md:text-lg'}>
                     <span>by</span>
-                    <img className={'w-5 md:w-7 h-5 md:h-7 rounded-full'} src={'/mockImages/userIcon_1.jpg'}/>
+                    <img className={'w-5 md:w-7 h-5 md:h-7 rounded-full'} src={'/Routem_Mock/mockImages/userIcon_1.jpg'}/>
                     <span>mock_user</span>
                 </div>
             </div>

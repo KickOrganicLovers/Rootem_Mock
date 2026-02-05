@@ -8,7 +8,7 @@ type Props = {
 }
 // 横長のシンプルな旅行ルート サムネイルカード
 export default function RouteCardHorizontal(props: Props){
-  const bgSrc = props.route.thumbnailImageSrc  ?? '/map.png';
+  const bgSrc = props.route.thumbnailImageSrc  ?? '/Routem_Mock/map.png';
   return (
     <div
       className={`relative w-full max-w-2xl overflow-hidden rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer ${

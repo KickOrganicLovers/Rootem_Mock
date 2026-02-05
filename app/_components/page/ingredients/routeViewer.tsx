@@ -10,6 +10,7 @@ type Props = {
 
 export default function RouteViewer(props: Props) {
   const route = props.focusedIndex !== null ? props.routes[props.focusedIndex] : null;
+  const thumbnailSrc = route?.thumbnailImageSrc ?? '/Routem_Mock/map.png';
 
   return (
     <div className={'flex w-[400px] h-full flex-col gap-6 backdrop-blur-xs overflow-y-scroll bg-background-1/50 p-6 border-l border-grass/20'}>
@@ -17,7 +18,7 @@ export default function RouteViewer(props: Props) {
         <>
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
             <Image
-              src={route.thumbnailImageSrc ?? '/map.png'}
+              src={thumbnailSrc}
               alt={route.title}
               fill
               className="object-cover"

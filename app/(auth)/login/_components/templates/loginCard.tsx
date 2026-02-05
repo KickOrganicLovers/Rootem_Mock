@@ -37,7 +37,7 @@ export default function LoginCard() {
 
           {/*背景画像*/}
           <div className={'flex w-full md:min-w-[500px] md:w-1/2 h-full md:h-fit absolute inset-0 md:inset-auto md:top-0 md:bottom-0 md:left-0 md:m-auto items-center justify-center z-0 md:z-auto opacity-20 md:opacity-100'}>
-              <img className={'lg:w-4/5 w-full aspect-video'} src={'/brushStroke_2.png'}/>
+              <img className={'lg:w-4/5 w-full aspect-video'} src={'/Routem_Mock/brushStroke_2.png'}/>
           </div>
 
         {/* 右側：フォーム */}

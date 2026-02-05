@@ -22,7 +22,7 @@ export default function FeaturedUserCard({ user, metric, onClick }: FeaturedUser
     >
       {/* Background image */}
       <img
-        src={user.profileBackgroundImage || "/Rootem_Mock/mockImages/userProfile.jpg"}
+        src={user.profileBackgroundImage || "/Routem_Mock/mockImages/userProfile.jpg"}
         alt="featured background"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -50,7 +50,7 @@ export default function FeaturedUserCard({ user, metric, onClick }: FeaturedUser
                             from US・17k followers
                         </p>
                     </div>
-                    <img src={user.profileImage || '/Rootem_Mock/mockImages/userIcon_1.jpg'} alt={`${user.name} icon`} className={'w-11 h-11 rounded-full'}/>
+                    <img src={user.profileImage || '/Routem_Mock/mockImages/userIcon_1.jpg'} alt={`${user.name} icon`} className={'w-11 h-11 rounded-full'}/>
                 </div>
             </div>
         </div>

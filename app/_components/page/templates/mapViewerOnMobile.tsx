@@ -24,7 +24,7 @@ export default function MapViewerOnMobile(props: Props) {
                             <div className="w-full h-[200px] relative">
                                 <img
                                     className="absolute w-full h-full object-cover"
-                                    src="/map.png"
+                                    src="/Routem_Mock/map.png"
                                     alt=""
                                 />
                                 <div className="absolute z-10 h-full w-1/3 p-1 bg-background-0/50 backdrop-blur-sm right-0">

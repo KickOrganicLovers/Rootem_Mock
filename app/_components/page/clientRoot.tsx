@@ -22,24 +22,24 @@ export default function ClientRoot() {
 
     // Mock users for demo (this week)
     const mockUsers: User[] = [
-        { id: 'u1', name: 'Aki Tanaka', likesThisWeek: 1240, viewsThisWeek: 28120, location: 'Tokyo, JP', bio: 'City explorer and coffee lover.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/Nara.jpg' },
-        { id: 'u2', name: 'Kenji Sato', likesThisWeek: 980, viewsThisWeek: 19230, location: 'Osaka, JP', bio: 'Runner and ramen hunter in Kansai.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/Tokyo.jpg' },
-        { id: 'u3', name: 'Serene Jane', likesThisWeek: 1570, viewsThisWeek: 32010, location: 'Kyoto, JP', bio: 'History routes and hidden shrines.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/userProfile.jpg' },
-        { id: 'u4', name: 'Yuta Mori', likesThisWeek: 870, viewsThisWeek: 16800, location: 'Sapporo, JP', bio: 'Snowy trails and craft beer enthusiast.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/Fuji.jpg' },
-        { id: 'u5', name: 'Hana Suzuki', likesThisWeek: 1430, viewsThisWeek: 29990, location: 'Fukuoka, JP', bio: 'Weekend cyclist and bakery map maker from Japan. And Ive Lived in French since last year. Its great and I love here.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/Kyoto.jpg' },
-        { id: 'u6', name: 'Ren Nakamura', likesThisWeek: 760, viewsThisWeek: 14550, location: 'Nagoya, JP', bio: 'Techie who loves riverfront jogs.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/Hokkaido.jpg' },
-        { id: 'u7', name: 'Sara Ito', likesThisWeek: 1110, viewsThisWeek: 25040, location: 'Nara, JP', bio: 'Nature walks and deer lover in Nara.', profileImage: '/mockImages/userIcon_1.jpg', profileBackgroundImage: '/mockImages/Hokkaido.jpg' },
+        { id: 'u1', name: 'Aki Tanaka', likesThisWeek: 1240, viewsThisWeek: 28120, location: 'Tokyo, JP', bio: 'City explorer and coffee lover.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/Nara.jpg' },
+        { id: 'u2', name: 'Kenji Sato', likesThisWeek: 980, viewsThisWeek: 19230, location: 'Osaka, JP', bio: 'Runner and ramen hunter in Kansai.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/Tokyo.jpg' },
+        { id: 'u3', name: 'Serene Jane', likesThisWeek: 1570, viewsThisWeek: 32010, location: 'Kyoto, JP', bio: 'History routes and hidden shrines.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/userProfile.jpg' },
+        { id: 'u4', name: 'Yuta Mori', likesThisWeek: 870, viewsThisWeek: 16800, location: 'Sapporo, JP', bio: 'Snowy trails and craft beer enthusiast.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/Fuji.jpg' },
+        { id: 'u5', name: 'Hana Suzuki', likesThisWeek: 1430, viewsThisWeek: 29990, location: 'Fukuoka, JP', bio: 'Weekend cyclist and bakery map maker from Japan. And Ive Lived in French since last year. Its great and I love here.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/Kyoto.jpg' },
+        { id: 'u6', name: 'Ren Nakamura', likesThisWeek: 760, viewsThisWeek: 14550, location: 'Nagoya, JP', bio: 'Techie who loves riverfront jogs.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/Hokkaido.jpg' },
+        { id: 'u7', name: 'Sara Ito', likesThisWeek: 1110, viewsThisWeek: 25040, location: 'Nara, JP', bio: 'Nature walks and deer lover in Nara.', profileImage: '/Routem_Mock/mockImages/userIcon_1.jpg', profileBackgroundImage: '/Routem_Mock/Hokkaido.jpg' },
     ]
 
 
     // Mock routes for demo (this week)
     const mockTopRoutes: Route[] = [
-        { id: 'r1', title: 'Kyoto Old Town Walk', user: mockUsers[0], likesThisWeek: 1280, viewsThisWeek: 18200, category: 'History', thumbnailImageSrc: '/mockImages/Kyoto.jpg' },
-        { id: 'r2', title: 'Okinawa Beach Hopping', user: mockUsers[1], likesThisWeek: 990, viewsThisWeek: 15420, category: 'Beach', thumbnailImageSrc: '/mockImages/Okinawa.jpg' },
-        { id: 'r3', title: 'Hokkaido Food Trip', user: mockUsers[2], likesThisWeek: 1570, viewsThisWeek: 21030, category: 'Food', thumbnailImageSrc: '/mockImages/Hokkaido.jpg' },
-        { id: 'r4', title: 'Tokyo Night Lights', user: mockUsers[3], likesThisWeek: 870, viewsThisWeek: 16800, category: 'City', thumbnailImageSrc: '/mockImages/Tokyo.jpg' },
-        { id: 'r5', title: 'Nara Temple Circuit', user: mockUsers[4], likesThisWeek: 1430, viewsThisWeek: 19990, category: 'Culture', thumbnailImageSrc: '/mockImages/Nara.jpg' },
-        { id: 'r6', title: 'Mount Fuji Scenic Drive', user: mockUsers[5], likesThisWeek: 760, viewsThisWeek: 14550, category: 'Nature', thumbnailImageSrc: '/mockImages/Fuji.jpg' },
+        { id: 'r1', title: 'Kyoto Old Town Walk', user: mockUsers[0], likesThisWeek: 1280, viewsThisWeek: 18200, category: 'History', thumbnailImageSrc: '/Routem_Mock/mockImages/Kyoto.jpg' },
+        { id: 'r2', title: 'Okinawa Beach Hopping', user: mockUsers[1], likesThisWeek: 990, viewsThisWeek: 15420, category: 'Beach', thumbnailImageSrc: '/Routem_Mock/mockImages/Okinawa.jpg' },
+        { id: 'r3', title: 'Hokkaido Food Trip', user: mockUsers[2], likesThisWeek: 1570, viewsThisWeek: 21030, category: 'Food', thumbnailImageSrc: '/Routem_Mock/mockImages/Hokkaido.jpg' },
+        { id: 'r4', title: 'Tokyo Night Lights', user: mockUsers[3], likesThisWeek: 870, viewsThisWeek: 16800, category: 'City', thumbnailImageSrc: '/Routem_Mock/mockImages/Tokyo.jpg' },
+        { id: 'r5', title: 'Nara Temple Circuit', user: mockUsers[4], likesThisWeek: 1430, viewsThisWeek: 19990, category: 'Culture', thumbnailImageSrc: '/Routem_Mock/mockImages/Nara.jpg' },
+        { id: 'r6', title: 'Mount Fuji Scenic Drive', user: mockUsers[5], likesThisWeek: 760, viewsThisWeek: 14550, category: 'Nature', thumbnailImageSrc: '/Routem_Mock/mockImages/Fuji.jpg' },
     ]
 
     const [selected, setSelected] = useState<selectedType>('home')

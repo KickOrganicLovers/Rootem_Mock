@@ -23,7 +23,7 @@ export default function FeaturedRouteCard({ route, metric = 'likes', onClick }: 
     >
       {/* Background image */}
       <img
-        src={route.thumbnailImageSrc || '/Rootem_Mock/mockImages/Kyoto.jpg'}
+        src={route.thumbnailImageSrc || '/Routem_Mock/mockImages/Kyoto.jpg'}
         alt={`${route.title} background`}
         className="absolute inset-0 w-full h-full object-cover"
       />
